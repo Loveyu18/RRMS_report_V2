@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing:2px;
+    
+}
+ul li{
+    list-style-type:none;
+    }
+
+a{
+    text-decoration: none !important;
+ 
+}
+
+
+/* header star */
+header{
+	background-color: #35507E ;
+    /* margin: auto; */
+}
+
+nav{
+    padding:0.8% !important;
+    max-width: 1440px;
+    margin: auto;
+    /* border:  1px solid saddlebrown; */
+}
+
+.link ul a.gBricks {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    top: -1px;
+    right: 10px;
+}
+
+.header-title{
+    color: white;
+    margin: auto;
+
+
+}
+.navbar-toggler{
+    background-color: white !important;
+
+}
+.link{
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: right;
+    line-height: 2;
+  
+}
+
+.link-item{
+    display: flex;
+    margin-right: 50px;
+    text-align: center;
+	color: white ;
+}
+
+
+.link-item:hover{
+	color: white ;
+    font-weight:bold;
+}
+
+
+.item{
+    width: 90%;
+    margin: auto;
+}
+
+.Search {
+	width: 155px;
+	height: 44px;
+    display: flex;
+
+}
+
+.Search input {
+    width: 100%;
+    border-radius: 35px;
+    border: 1px solid #c8c8c8;
+    padding-left: 16%;
+    outline: none;
+    font-size: 1.12rem;
+
+}	
+.SearchImg {
+    
+    margin-left: -30%;
+	-webkit-appearance: none;
+	font-size: 0;
+	cursor: pointer;
+	border: 0px;
+	background-color: transparent;
+}
+.SearchImg img{
+    width: 24px;
+   
+}
+.SearchBg {
+	background-color: #ffffff;
+}
+
+
+input::-webkit-input-placeholder {
+	color: #979797;
+}
+
+input:-moz-placeholder {
+	color: #979797;
+}
+
+input::-moz-placeholder {
+	color: #979797;
+}
+
+input::-ms-input-placeholder {
+	color: #979797;
+}
+  @media (max-width:992px) {
+    .navbar > .container-fluid {
+        padding: 2% 2%;
+    }
+    .navbar-nav {
+        margin: auto;
+
+    }
+    
+    .link-item{
+        margin-right: 0px;
+        margin: 10px 0px;
+    }
+    .nav-item{
+        margin: auto;
+    }
+
+
+  }
+  @media (max-width:576px) {
+    .navbar > .container-fluid {
+        padding: 4% 2%;
+    }
+
+  }
+  @media (max-width:414px) {
+
+    .icon-img{
+        width: 90%;
+    }
+    .navbar-toggler{
+        padding: 0.25rem 0.5rem !important;
+    }
+   .navbar-toggler-icon{
+        width:1.2em !important;
+        height: 1em !important;
+    }
+  }
+
+/* header end */

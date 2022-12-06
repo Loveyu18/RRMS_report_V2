@@ -1,0 +1,139 @@
+/* footer star */
+footer{
+    background-color: #35507E;
+    color: white;
+    font-size: 1rem;
+
+}
+.footer-nav{
+    max-width: 1440px;
+    width: 90%;
+    padding: 2.5% 0 1% 0;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    line-height: 1.2;
+   
+}
+
+.fgBricks {
+    padding: 0% 2%;
+    color: #fff;
+    font-weight: 700;
+
+}
+.fgBricks:hover {
+    color: #fff;
+
+}
+.footer-left p{
+    margin-top: 20px;
+}
+.line{
+    display: none;
+}
+
+
+.safe li{
+    display:inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 180px;  
+    border-right: 1px solid #ffffff;
+}
+
+.safe li:last-child{
+    border-right: 1px solid  transparent;
+}
+
+.safe li a{
+    display: block;
+    color:#ffffff;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.safe li:last-child a{
+
+    padding-left: 20px;
+}
+
+.safe li a:hover{
+    font-weight:bold;
+}
+
+.visits{
+    margin-top: 50px;
+}
+
+@media (max-width:1280px) {
+    .line{
+        display: block;
+    }
+  }
+@media (max-width:1024px) {
+    .footer-nav{
+        display: block;
+    }
+    .footer-left{
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .safe{
+        margin-top: 20px;
+        text-align: center;
+    }
+   }
+@media (max-width:768px) {
+
+    .footer-nav{
+        display: block;
+        text-align: center;
+        line-height: 2;
+    }
+    .footer-left{
+        display: block;
+
+
+    }
+    .safe li{
+        margin-top: 10px;
+    }
+    .safe li:nth-child(3) {
+        border-right: 1px solid  transparent;
+    }
+
+  }
+  @media (max-width:576px) {
+    .safe li:nth-child(2) {
+        border-right: 1px solid  transparent;
+    }
+    .safe li:nth-child(3) {
+        border-right: 1px solid  white;
+    }
+  }
+  
+
+  @media (max-width:414px) {
+    .footer-nav{
+        width: 95%;
+    }
+    .safe{
+
+        padding: 0;
+    }
+    .safe li{
+        border-right: none;
+    }
+    .safe li:nth-child(3) {
+        border-right: 1px solid  transparent;
+    }
+    .safe li:last-child a{
+        padding-left:0px;
+    }
+  }
+  
+
+/* footer end */

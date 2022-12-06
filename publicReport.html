@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我要檢舉 線上填報</title>
+
+    <link rel="stylesheet" href="default.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <!-- header開始 -->
+    <!-- <a href="#center" id="gotocenter" title="跳到主要內容" tabindex="1" class="sr-only sr-only-focusable">跳到主要內容</a> -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="header-title" href="index.html" title="首頁">
+                    <img class="icon-img" alt="環保署logo" src="./img/rc-logo.svg">
+                    <h1 style="display:none">資源回收管理基金管理會</h1>
+                </a>
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse link" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <a href="#U" id="U" name="U" accesskey="U" class="accesskey u gBricks" title="上方選單區">:::</a>
+                        <li class="nav-item">
+                            <a class="icon link-item" href="https://recycle.epa.gov.tw/" target="_blank"
+                                title="資源回收網">資源回收網</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="comment link-item" href="https://epamail.epa.gov.tw/Front/MailBoxHome"
+                                target="_blank" title="意見信箱">意見信箱</a>
+                        </li>
+                        <li class="nav-item">
+                            <form class="Search" role="search" method="get" name="searchform"
+                                action="https://www.google.com/search" target="_blank">
+                                <input type="hidden" name="sitesearch"
+                                    value="recycle2.epa.gov.tw/People/PublicReportMain.html" />
+                                <label for="search"></label>
+                                <!-- <div class="input-group"> -->
+                                <input type="text" class="SearchBg" placeholder="Search" name="q" id="search"
+                                    autocomplete="off">
+                                <button type="submit" class="SearchImg"><img src="./img/search.svg" alt="搜尋"></button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header結束 -->
+    <main class="container">
+        <form action="" method="post">
+            <div class="row">
+                <h2><img alt="檢舉" src="./img/report.svg">我要檢舉 線上填報</h2>
+                <div class="legalSource">
+                    <h3>法源依據</h3>
+                    <p>依<a href="https://oaout.epa.gov.tw/law/NewsContent.aspx?id=22367"
+                            title="開新視窗">「行政院環境保護署獎勵民眾檢舉應回收廢棄物責任業者逃漏回收清除處理費實施要點」</a>辦理
+                    </p>
+                </div>
+                <div class="contentCard">
+                    <div class="row">
+                        <!-- start::檢舉內容 -->
+                        <div id="publicReportForm" class="contentBlockMobile col-xl-6 ">
+                            <h4 class="mb-3">檢舉內容</h4>
+                            <!-- start::材質類別-下拉選單 -->
+                            <div class="mb-2 form-group">
+                                <label for="material-form-select" class="material-form-label">材質類別</label>
+                                <select id="material-form-select" class="form-control"
+                                    aria-label="Default select example" name="">
+                                    <option value="1" selected>容器</option>
+                                    <option value="2">機動車輛</option>
+                                    <option value="3">電子電器</option>
+                                    <option value="4">資訊物品</option>
+                                    <option value="5">輪胎</option>
+                                    <option value="6">鉛蓄電池</option>
+                                    <option value="7">乾電池</option>
+                                    <option value="8">照明光源</option>
+                                </select>
+                            </div>
+                            <!-- end::材質類別-下拉選單 -->
+
+                            <div class="mb-2">
+                                <label for="reportLocation" class="form-label">採證地點</label>
+                                <input type="text" class="form-control" id="reportLocation" placeholder="請輸入地址或地標"
+                                    name="">
+                            </div>
+                            <div class="mb-2">
+                                <label for="reportContent" class="form-label">佐證描述</label>
+                                <textarea class="form-control" id="reportContent" rows="3" placeholder="請詳細描述佐證內容"
+                                    name=""></textarea>
+                            </div>
+                            <div class="required mb-2">
+                                <label for="reportPhoto_1" class="form-label">具體佐證照片 1 </label>
+                                <input class="form-control-file" type="file" id="reportPhoto_1" name="" required>
+                            </div>
+                            <div class="required mb-5">
+                                <label for="reportPhoto_2" class="form-label">具體佐證照片 2 </label>
+                                <input class="form-control-file" type="file" id="reportPhoto_2" name="" required>
+                            </div>
+                            <h4 class="mb-3">檢舉人聯絡方式</h4>
+                            <div class="mb-5">
+                                <div class="required mb-2">
+                                    <label for="reportName" class="form-label">姓名</label>
+                                    <input type="text" class="form-control" id="reportName" placeholder="請輸入真實姓名"
+                                        name="" required>
+                                </div>
+                                <div class="required mb-2">
+                                    <label for="reportEmail" class="form-label">電子信箱</label>
+                                    <input type="email" class="form-control" id="reportEmail"
+                                        placeholder="範例：likeEPA@hotmail.com" name="" required>
+                                </div>
+                                <div class="required mb-2">
+                                    <label for="reportPhoneNumber" class="form-label">連絡電話</label>
+                                    <input type="text" class="form-control" id="reportPhoneNumber"
+                                        placeholder="範例：0966-000777" name="" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end::檢舉內容 -->
+                        <!-- start::範例照片 -->
+                        <div class="contentBlockMobile col-xl-6 ">
+                            <h4 class="mb-4">佐證照片範例</h4>
+                            <div class="mb-5">
+                                <div class="productImgTitle">
+                                    <h5>重點一 商品整體照片</h5>
+                                </div>
+                                <div class="productImg"><img src="./img/商品整體示意圖.png" alt="商品整體外觀照片"></div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="productImgTitle">
+                                    <h5>重點二 商品明細照片</h5>
+                                    <p>需可清楚辨識製商品名稱、內容量、製造商、進口商、品牌使用者等資訊</p>
+                                </div>
+                                <div class="productImg"><img src="./img/商品標籤示意圖.png" alt="商品標籤示意圖"></div>
+                            </div>
+                        </div>
+                        <!-- end::範例照片 -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- start::驗證碼 -->
+            <div class="d-flex justify-content-center  mb-5">
+                <div class="row align-items-center">
+                    <input class="col-6 align-items-center" type="button mr-3" id="code" onclick="createCode()" />
+                    <div class="col-6">
+                        <a class="codeText" href="##" onclick="createCode()">看不清楚換一張</a>
+                        <input class="" type="text" id="input" placeholder="請輸入驗證碼" />
+                    </div>
+                </div>
+            </div>
+            <!-- end::驗證碼 -->
+
+            <!-- start::送出 & 上一頁按鈕 -->
+            <div class="submitBtn d-flex justify-content-center mb-5">
+                <input type="submit" id="publicReportSubmitBtn" class="btn btn-primary mx-3" value="送出"
+                    onclick="validate()" />
+                <a href="./index.html" type="button" class="btn btn-secondary mx-3" title="回上一頁">回上一頁</a>
+            </div>
+            <!-- end::送出 & 上一頁按鈕 -->
+        </form>
+    </main>
+
+    <!-- footer開始 -->
+    <footer>
+        <div class="footer-nav">
+            <a href="#start-C" id="AB " name="B " title="下方網站資訊 " accesskey="B" class="fgBricks">:::</a>
+            <div class="footer-left">
+                <img alt="行政院環境保護署" src="./img/rc-logo.svg">
+                <p>行政院環境保護署資源回收管理基金管理會<br class="line"> 版權所有<br>
+                    100005 臺北市中正區衡陽路99號13樓<br>
+                    電話：(02)-23705888</p>
+            </div>
+            <div class="footer-right">
+                <ul class="safe">
+                    <li><a href="https://www.epa.gov.tw/Page/41156C14CC997554" target="_blank"
+                            title="隱私權保護政策">隱私權保護政策</a></li>
+                    <li><a href="https://www.epa.gov.tw/Page/981903047CA6500B" target="_blank" title="資訊安全規範">資訊安全規範</a>
+                    </li>
+                    <li><a href="https://www.epa.gov.tw/Page/80191639AC8FA886" target="_blank" title="資訊安全政策">
+                            資訊安全政策</a></li>
+                    <li><a href="https://www.epa.gov.tw/Page/A33D3A6556ABFCD2" target="_blank"
+                            title="網站資料開放宣告">網站資料開放宣告</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer結束 -->
+
+    <!-- 驗證碼js -->
+    <script src="./captcha.js"></script>
+    <!-- sweetAlert2 彈跳視窗 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+
+</html>

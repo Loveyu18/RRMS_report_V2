@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+}
+
+html,
+body {
+    font-family: Verdana, 微軟正黑體;
+    font-size: 16.5px !important;
+}
+
+html.smFont,
+body.smFont {
+    font-size: 15px !important;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+@media (max-width: 1199.98px) {
+
+    html,
+    body {
+        font-size: 13px !important;
+    }
+}
+
+
+*:focus,
+.header-menu .menu-nav>.menu-item .menu-link:focus {
+    outline: 3px dotted #333 !important;
+}
+
+/* 無障礙  start */
+input:focus,
+select:focus,
+button:focus,
+a:focus,
+area:focus,
+textarea:focus {
+    outline: 3px dotted orange !important;
+}
+/* 無障礙  end */
